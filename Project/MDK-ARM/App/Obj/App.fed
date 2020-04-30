@@ -1,0 +1,441 @@
+;#<FEEDBACK># ARM Linker, 5060750: Last Updated: Thu Dec 26 08:50:28 2019
+;VERSION 0.2
+;FILE adc.o
+adc_close <= USED 0
+adc_power_off <= USED 0
+adc_power_off_opendrain <= USED 0
+adc_power_on <= USED 0
+adc_power_on_opendrain <= USED 0
+adc_sample_once <= USED 0
+adc_sample_once_single <= USED 0
+;FILE app_task.o
+;FILE ba6289.o
+BSP_MOTOR_ADC_Close <= USED 0
+BSP_MOTOR_ADC_Init <= USED 0
+BSP_MOTOR_ADC_PowerOff <= USED 0
+BSP_MOTOR_ADC_PowerOn <= USED 0
+BSP_MOTOR_Close <= USED 0
+BSP_MOTOR_GetPosition <= USED 0
+BSP_MOTOR_InitIPU <= USED 0
+BSP_MOTOR_PowerOff <= USED 0
+BSP_MOTOR_PowerOn <= USED 0
+BSP_MOTOR_SetReverse <= USED 0
+;FILE board.o
+;FILE bsp_adc.o
+BSP_ADC_Close <= USED 0
+BSP_ADC_CloseSingle <= USED 0
+BSP_ADC_PowerOff <= USED 0
+BSP_ADC_PowerOff_OpenDrain <= USED 0
+BSP_ADC_PowerOn <= USED 0
+BSP_ADC_PowerOn_OpenDrain <= USED 0
+BSP_ADC_SampleOnceSingle <= USED 0
+;FILE bsp_com.o
+BSP_COM_ClearRxFlag <= USED 0
+BSP_COM_Close <= USED 0
+BSP_COM_GetRxFlag <= USED 0
+BSP_COM_LprRecvData <= USED 0
+BSP_COM_RecvChar <= USED 0
+BSP_COM_RecvDataStream <= USED 0
+;FILE bsp_exti.o
+BSP_EXTI_DisableSingle <= USED 0
+BSP_EXTI_ReadStateSingle <= USED 0
+BSP_EXTI_SetGPIOMode <= USED 0
+;FILE bsp_flash_ext.o
+BSP_FLASH_EXT_EraseChip <= USED 0
+BSP_FLASH_EXT_GetMaxPhyPages <= USED 0
+;FILE bsp_gpio.o
+;FILE bsp_led.o
+;FILE bsp_pvd.o
+;FILE bsp_rtc.o
+;FILE bsp_systimer.o
+BSP_SysTimer_ClrOverFlag <= USED 0
+BSP_SysTimer_Config <= USED 0
+BSP_SysTimer_GetOverFlag <= USED 0
+BSP_SysTimer_GetTimerState <= USED 0
+BSP_SysTimer_Init <= USED 0
+;FILE bsp_timbase.o
+;FILE bsp_wdg.o
+;FILE check.o
+crc_16_modbus <= USED 0
+crc_ccitt_16 <= USED 0
+update_crc_16 <= USED 0
+update_crc_ccitt <= USED 0
+;FILE com.o
+com_close <= USED 0
+com_get_rxflag <= USED 0
+com_recv_char <= USED 0
+com_recv_data_stream <= USED 0
+uart_lpr_rcv <= USED 0
+;FILE dbg.o
+MYLOG_ERROR <= USED 0
+MYLOG_INFO <= USED 0
+MYLOG_TRACE <= USED 0
+MYLOG_WARN <= USED 0
+;FILE delay.o
+;FILE display.o
+disp_full <= USED 0
+;FILE error.o
+;FILE event_groups.o
+uxEventGroupGetNumber <= USED 0
+vEventGroupClearBitsCallback <= USED 0
+vEventGroupDelete <= USED 0
+vEventGroupSetBitsCallback <= USED 0
+xEventGroupClearBits <= USED 0
+xEventGroupCreate <= USED 0
+xEventGroupGetBitsFromISR <= USED 0
+xEventGroupSetBits <= USED 0
+xEventGroupSync <= USED 0
+xEventGroupWaitBits <= USED 0
+;FILE exti.o
+exti_init_single <= USED 0
+exti_read_state_single <= USED 0
+;FILE filesystem.o
+fs_delete <= USED 0
+;FILE flash_ext.o
+flash_ext_erase_chip <= USED 0
+flash_ext_erase_multi_4k <= USED 0
+flash_ext_get_max_phy_pages <= USED 0
+;FILE fy_protocol.o
+data_trim_int <= USED 0
+;FILE heap_4.o
+vPortInitialiseBlocks <= USED 0
+xPortGetFreeHeapSize <= USED 0
+xPortGetMinimumEverFreeHeapSize <= USED 0
+;FILE ht1621.o
+BSP_LCD_Close <= USED 0
+BSP_LCD_PowerOff <= USED 0
+BSP_LCD_PowerOn <= USED 0
+;FILE lcd.o
+lcd_close <= USED 0
+lcd_power_off <= USED 0
+lcd_power_on <= USED 0
+;FILE led.o
+;FILE list.o
+;FILE main.o
+;FILE misc.o
+NVIC_SetVectorTable <= USED 0
+NVIC_SystemLPConfig <= USED 0
+SysTick_CLKSourceConfig <= USED 0
+;FILE motor.o
+motor_adc_close <= USED 0
+motor_adc_init <= USED 0
+motor_adc_power_off <= USED 0
+motor_adc_power_on <= USED 0
+motor_close <= USED 0
+motor_get_position <= USED 0
+motor_init_ipu <= USED 0
+motor_power_off <= USED 0
+motor_power_on <= USED 0
+motor_set_reverse <= USED 0
+;FILE port.o
+vPortEndScheduler <= USED 0
+vPortGetIPSR <= USED 0
+vPortValidateInterruptPriority <= USED 0
+;FILE pvd.o
+;FILE queue.o
+pcQueueGetName <= USED 0
+ucQueueGetQueueType <= USED 0
+uxQueueGetQueueNumber <= USED 0
+uxQueueMessagesWaiting <= USED 0
+uxQueueMessagesWaitingFromISR <= USED 0
+uxQueueSpacesAvailable <= USED 0
+vQueueAddToRegistry <= USED 0
+vQueueDelete <= USED 0
+vQueueSetQueueNumber <= USED 0
+vQueueUnregisterQueue <= USED 0
+xQueueAddToSet <= USED 0
+xQueueCreateSet <= USED 0
+xQueueGenericCreate <= USED 0
+xQueueGenericReceive <= USED 0
+xQueueGenericReset <= USED 0
+xQueueGenericSend <= USED 0
+xQueueGenericSendFromISR <= USED 0
+xQueueGiveFromISR <= USED 0
+xQueueIsQueueEmptyFromISR <= USED 0
+xQueueIsQueueFullFromISR <= USED 0
+xQueuePeekFromISR <= USED 0
+xQueueReceiveFromISR <= USED 0
+xQueueRemoveFromSet <= USED 0
+xQueueSelectFromSet <= USED 0
+xQueueSelectFromSetFromISR <= USED 0
+;FILE recv_data_deal.o
+;FILE rf.o
+rf_close <= USED 0
+rf_get_recv_flag <= USED 0
+rf_get_rssi <= USED 0
+rf_get_state <= USED 0
+rf_power_off <= USED 0
+rf_power_off_opendrain <= USED 0
+rf_power_on_opendrain <= USED 0
+rf_reinit <= USED 0
+rf_set_channel <= USED 0
+rf_set_fre <= USED 0
+rf_set_rxmode <= USED 0
+;FILE rtc.o
+rtc_read_bcd <= USED 0
+rtc_write_bcd <= USED 0
+;FILE si4432.o
+BSP_RF_Close <= USED 0
+BSP_RF_GetDevStatus <= USED 0
+BSP_RF_GetITStatus1 <= USED 0
+BSP_RF_GetITStatus2 <= USED 0
+BSP_RF_GetRecvFlag <= USED 0
+BSP_RF_GetRssi <= USED 0
+BSP_RF_GetState <= USED 0
+BSP_RF_PortClose <= USED 0
+BSP_RF_PowerOff <= USED 0
+BSP_RF_PowerOff_OpenDrain <= USED 0
+BSP_RF_PowerOn_OpenDrain <= USED 0
+BSP_RF_ReInit <= USED 0
+BSP_RF_SetFreChannel <= USED 0
+BSP_RF_SetTxpow <= USED 0
+;FILE stm32f10x_adc.o
+ADC_AnalogWatchdogCmd <= USED 0
+ADC_AnalogWatchdogSingleChannelConfig <= USED 0
+ADC_AnalogWatchdogThresholdsConfig <= USED 0
+ADC_AutoInjectedConvCmd <= USED 0
+ADC_ClearFlag <= USED 0
+ADC_ClearITPendingBit <= USED 0
+ADC_DeInit <= USED 0
+ADC_DiscModeChannelCountConfig <= USED 0
+ADC_DiscModeCmd <= USED 0
+ADC_ExternalTrigConvCmd <= USED 0
+ADC_ExternalTrigInjectedConvCmd <= USED 0
+ADC_ExternalTrigInjectedConvConfig <= USED 0
+ADC_GetDualModeConversionValue <= USED 0
+ADC_GetITStatus <= USED 0
+ADC_GetInjectedConversionValue <= USED 0
+ADC_GetSoftwareStartConvStatus <= USED 0
+ADC_GetSoftwareStartInjectedConvCmdStatus <= USED 0
+ADC_ITConfig <= USED 0
+ADC_InjectedChannelConfig <= USED 0
+ADC_InjectedDiscModeCmd <= USED 0
+ADC_InjectedSequencerLengthConfig <= USED 0
+ADC_SetInjectedOffset <= USED 0
+ADC_SoftwareStartInjectedConvCmd <= USED 0
+ADC_StructInit <= USED 0
+ADC_TempSensorVrefintCmd <= USED 0
+;FILE stm32f10x_bkp.o
+BKP_ClearFlag <= USED 0
+BKP_ClearITPendingBit <= USED 0
+BKP_GetFlagStatus <= USED 0
+BKP_GetITStatus <= USED 0
+BKP_ITConfig <= USED 0
+BKP_RTCOutputConfig <= USED 0
+BKP_SetRTCCalibrationValue <= USED 0
+BKP_TamperPinCmd <= USED 0
+BKP_TamperPinLevelConfig <= USED 0
+;FILE stm32f10x_dma.o
+DMA_ClearFlag <= USED 0
+DMA_ClearITPendingBit <= USED 0
+DMA_GetCurrDataCounter <= USED 0
+DMA_GetFlagStatus <= USED 0
+DMA_GetITStatus <= USED 0
+DMA_ITConfig <= USED 0
+DMA_SetCurrDataCounter <= USED 0
+DMA_StructInit <= USED 0
+;FILE stm32f10x_exti.o
+EXTI_ClearFlag <= USED 0
+EXTI_GenerateSWInterrupt <= USED 0
+EXTI_GetFlagStatus <= USED 0
+;FILE stm32f10x_gpio.o
+GPIO_AFIODeInit <= USED 0
+GPIO_DeInit <= USED 0
+GPIO_ETH_MediaInterfaceConfig <= USED 0
+GPIO_EventOutputCmd <= USED 0
+GPIO_EventOutputConfig <= USED 0
+GPIO_PinLockConfig <= USED 0
+GPIO_ReadInputData <= USED 0
+GPIO_ReadOutputData <= USED 0
+GPIO_ReadOutputDataBit <= USED 0
+GPIO_StructInit <= USED 0
+GPIO_Write <= USED 0
+GPIO_WriteBit <= USED 0
+;FILE stm32f10x_it.o
+EXTI2_IRQnHandler <= USED 0
+;FILE stm32f10x_iwdg.o
+IWDG_GetFlagStatus <= USED 0
+;FILE stm32f10x_pwr.o
+PWR_ClearFlag <= USED 0
+PWR_DeInit <= USED 0
+PWR_EnterSTANDBYMode <= USED 0
+PWR_EnterSTOPMode <= USED 0
+PWR_WakeUpPinCmd <= USED 0
+;FILE stm32f10x_rcc.o
+RCC_AdjustHSICalibrationValue <= USED 0
+RCC_ClearITPendingBit <= USED 0
+RCC_ClockSecuritySystemCmd <= USED 0
+RCC_DeInit <= USED 0
+RCC_GetITStatus <= USED 0
+RCC_GetSYSCLKSource <= USED 0
+RCC_HCLKConfig <= USED 0
+RCC_HSEConfig <= USED 0
+RCC_HSICmd <= USED 0
+RCC_ITConfig <= USED 0
+RCC_LSICmd <= USED 0
+RCC_MCOConfig <= USED 0
+RCC_PCLK1Config <= USED 0
+RCC_PCLK2Config <= USED 0
+RCC_PLLCmd <= USED 0
+RCC_PLLConfig <= USED 0
+RCC_SYSCLKConfig <= USED 0
+RCC_USBCLKConfig <= USED 0
+RCC_WaitForHSEStartUp <= USED 0
+;FILE stm32f10x_rtc.o
+RTC_ClearFlag <= USED 0
+RTC_GetDivider <= USED 0
+RTC_GetFlagStatus <= USED 0
+RTC_SetAlarm <= USED 0
+;FILE stm32f10x_tim.o
+TIM_ARRPreloadConfig <= USED 0
+TIM_BDTRConfig <= USED 0
+TIM_BDTRStructInit <= USED 0
+TIM_CCPreloadControl <= USED 0
+TIM_CCxCmd <= USED 0
+TIM_CCxNCmd <= USED 0
+TIM_ClearOC1Ref <= USED 0
+TIM_ClearOC2Ref <= USED 0
+TIM_ClearOC3Ref <= USED 0
+TIM_ClearOC4Ref <= USED 0
+TIM_CounterModeConfig <= USED 0
+TIM_CtrlPWMOutputs <= USED 0
+TIM_DMACmd <= USED 0
+TIM_DMAConfig <= USED 0
+TIM_DeInit <= USED 0
+TIM_ETRClockMode1Config <= USED 0
+TIM_ETRClockMode2Config <= USED 0
+TIM_ETRConfig <= USED 0
+TIM_EncoderInterfaceConfig <= USED 0
+TIM_ForcedOC1Config <= USED 0
+TIM_ForcedOC2Config <= USED 0
+TIM_ForcedOC3Config <= USED 0
+TIM_ForcedOC4Config <= USED 0
+TIM_GenerateEvent <= USED 0
+TIM_GetCapture1 <= USED 0
+TIM_GetCapture2 <= USED 0
+TIM_GetCapture3 <= USED 0
+TIM_GetCapture4 <= USED 0
+TIM_GetCounter <= USED 0
+TIM_GetFlagStatus <= USED 0
+TIM_GetPrescaler <= USED 0
+TIM_ICInit <= USED 0
+TIM_ICStructInit <= USED 0
+TIM_ITRxExternalClockConfig <= USED 0
+TIM_InternalClockConfig <= USED 0
+TIM_OC1FastConfig <= USED 0
+TIM_OC1Init <= USED 0
+TIM_OC1NPolarityConfig <= USED 0
+TIM_OC1PolarityConfig <= USED 0
+TIM_OC1PreloadConfig <= USED 0
+TIM_OC2FastConfig <= USED 0
+TIM_OC2Init <= USED 0
+TIM_OC2NPolarityConfig <= USED 0
+TIM_OC2PolarityConfig <= USED 0
+TIM_OC2PreloadConfig <= USED 0
+TIM_OC3FastConfig <= USED 0
+TIM_OC3Init <= USED 0
+TIM_OC3NPolarityConfig <= USED 0
+TIM_OC3PolarityConfig <= USED 0
+TIM_OC3PreloadConfig <= USED 0
+TIM_OC4FastConfig <= USED 0
+TIM_OC4Init <= USED 0
+TIM_OC4PolarityConfig <= USED 0
+TIM_OC4PreloadConfig <= USED 0
+TIM_OCStructInit <= USED 0
+TIM_PWMIConfig <= USED 0
+TIM_PrescalerConfig <= USED 0
+TIM_SelectCCDMA <= USED 0
+TIM_SelectCOM <= USED 0
+TIM_SelectHallSensor <= USED 0
+TIM_SelectInputTrigger <= USED 0
+TIM_SelectMasterSlaveMode <= USED 0
+TIM_SelectOCxM <= USED 0
+TIM_SelectOnePulseMode <= USED 0
+TIM_SelectOutputTrigger <= USED 0
+TIM_SelectSlaveMode <= USED 0
+TIM_SetAutoreload <= USED 0
+TIM_SetClockDivision <= USED 0
+TIM_SetCompare1 <= USED 0
+TIM_SetCompare2 <= USED 0
+TIM_SetCompare3 <= USED 0
+TIM_SetCompare4 <= USED 0
+TIM_SetCounter <= USED 0
+TIM_SetIC1Prescaler <= USED 0
+TIM_SetIC2Prescaler <= USED 0
+TIM_SetIC3Prescaler <= USED 0
+TIM_SetIC4Prescaler <= USED 0
+TIM_TIxExternalClockConfig <= USED 0
+TIM_TimeBaseStructInit <= USED 0
+TIM_UpdateDisableConfig <= USED 0
+TIM_UpdateRequestConfig <= USED 0
+;FILE stm32f10x_usart.o
+USART_ClockInit <= USED 0
+USART_ClockStructInit <= USED 0
+USART_DMACmd <= USED 0
+USART_GetFlagStatus <= USED 0
+USART_HalfDuplexCmd <= USED 0
+USART_IrDACmd <= USED 0
+USART_IrDAConfig <= USED 0
+USART_LINBreakDetectLengthConfig <= USED 0
+USART_LINCmd <= USED 0
+USART_OneBitMethodCmd <= USED 0
+USART_OverSampling8Cmd <= USED 0
+USART_ReceiverWakeUpCmd <= USED 0
+USART_SendBreak <= USED 0
+USART_SetAddress <= USED 0
+USART_SetGuardTime <= USED 0
+USART_SetPrescaler <= USED 0
+USART_SmartCardCmd <= USED 0
+USART_SmartCardNACKCmd <= USED 0
+USART_StructInit <= USED 0
+USART_WakeUpConfig <= USED 0
+;FILE sysparams.o
+;FILE system_stm32f10x.o
+SystemCoreClockUpdate <= USED 0
+;FILE systimer.o
+systimer_clr_over_flag <= USED 0
+systimer_config <= USED 0
+systimer_get_over_flag <= USED 0
+systimer_init <= USED 0
+;FILE tasks.o
+pcTaskGetName <= USED 0
+ulTaskNotifyTake <= USED 0
+uxTaskGetNumberOfTasks <= USED 0
+uxTaskGetTaskNumber <= USED 0
+uxTaskPriorityGet <= USED 0
+uxTaskPriorityGetFromISR <= USED 0
+uxTaskResetEventItemValue <= USED 0
+vTaskEndScheduler <= USED 0
+vTaskMissedYield <= USED 0
+vTaskNotifyGiveFromISR <= USED 0
+vTaskPlaceOnEventList <= USED 0
+vTaskPlaceOnUnorderedEventList <= USED 0
+vTaskPrioritySet <= USED 0
+vTaskSetTaskNumber <= USED 0
+vTaskSetTimeOutState <= USED 0
+xTaskCheckForTimeOut <= USED 0
+xTaskGenericNotify <= USED 0
+xTaskGenericNotifyFromISR <= USED 0
+xTaskGetTickCountFromISR <= USED 0
+xTaskNotifyStateClear <= USED 0
+xTaskNotifyWait <= USED 0
+xTaskRemoveFromEventList <= USED 0
+xTaskRemoveFromUnorderedEventList <= USED 0
+xTaskResumeFromISR <= USED 0
+;FILE utili.o
+ascii2nibblebyte <= USED 0
+ascii_2_bytes <= USED 0
+bcd_2_dec_type <= USED 0
+bytes_2_ascii <= USED 0
+dec_2_bcd_type <= USED 0
+is_leap_year <= USED 0
+is_valid_time <= USED 0
+localtime_user <= USED 0
+mktime_user <= USED 0
+str_split <= USED 0
+;FILE valve_deal.o
+;FILE vtask_calculate.o
+;FILE vtask_com_rf_valve.o
+;FILE vtask_power_display_temp_runled.o
+;FILE vtaskruntimestats.o
+;FILE wdg.o
