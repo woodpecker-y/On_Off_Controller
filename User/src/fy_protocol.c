@@ -499,27 +499,27 @@ u8 fy_protocol_func_request(FY_PROTOCOLPkg *pkg, RunParams *run_params, SysParam
                 
                 //供暖开始时间
                 bytes_reverse(pkg->data+26, 2);
-                sys_params->Start_Time.Year = hex_2_dec_type(pkg->data+26, 2, ORD_MOTOR);
-                sys_params->Start_Time.Month = pkg->data[28];
-                sys_params->Start_Time.Day = pkg->data[29];
-                sys_params->Start_Time.Hour = pkg->data[30];
+                sys_params->Start_Time.Year   = hex_2_dec_type(pkg->data+26, 2, ORD_MOTOR);
+                sys_params->Start_Time.Month  = pkg->data[28];
+                sys_params->Start_Time.Day    = pkg->data[29];
+                sys_params->Start_Time.Hour   = pkg->data[30];
                 sys_params->Start_Time.Minute = pkg->data[31];
                 sys_params->Start_Time.Second = pkg->data[32];
                 
                 //供暖结束时间
                 bytes_reverse(pkg->data+33, 2);
-                sys_params->Start_Time.Year = hex_2_dec_type(pkg->data+33, 2, ORD_MOTOR);
-                sys_params->Start_Time.Month = pkg->data[35];
-                sys_params->Start_Time.Day = pkg->data[36];
-                sys_params->Start_Time.Hour = pkg->data[37];
-                sys_params->Start_Time.Minute = pkg->data[38];
-                sys_params->Start_Time.Second = pkg->data[39];
+                sys_params->Over_Time.Year   = hex_2_dec_type(pkg->data+33, 2, ORD_MOTOR);
+                sys_params->Over_Time.Month  = pkg->data[35];
+                sys_params->Over_Time.Day    = pkg->data[36];
+                sys_params->Over_Time.Hour   = pkg->data[37];
+                sys_params->Over_Time.Minute = pkg->data[38];
+                sys_params->Over_Time.Second = pkg->data[39];
                 
                 //楼栋信息
-                sys_params->Buld =  pkg->data[40];
-                sys_params->Unit =  pkg->data[41];
+                sys_params->Buld  =  pkg->data[40];
+                sys_params->Unit  =  pkg->data[41];
                 sys_params->Floor =  pkg->data[42];
-                sys_params->Cell =  pkg->data[43];
+                sys_params->Cell  =  pkg->data[43];
                 bytes_reverse(pkg->data+44, 2);
                 sys_params->CellArea = hex_2_dec_type(pkg->data+44, 2, ORD_MOTOR);
             }
