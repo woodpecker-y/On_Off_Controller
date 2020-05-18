@@ -28,6 +28,7 @@ void vTask_Calculate(void *pvParameters)
     
     portTickType xLastExecutionTime;
     xLastExecutionTime = xTaskGetTickCount();
+    u32 rf433_init_timer = 0;
 	struct tm t;
     
     //自动RTC和系统时钟 对比 时间
@@ -39,14 +40,11 @@ void vTask_Calculate(void *pvParameters)
 //温控器失联自动开阀
 #if RF_LOSS_OPEN_VALVE_SWITCH
         {
-            //无线计时  超过30分钟没有和温控器连接则显示失联
-            if(g_run_params.rf_comm_flag == 1)//如果 有连接 则 g_run_params.rf_comm_num++
-            {
-                g_run_params.rf_comm_timer++;
-            } 
+            //无线计时  超过60分钟没有和温控器连接则显示失联
+            g_run_params.rf_comm_timer++;
 
             //一个小时没有和温控器建立连接则表示失联，则阀门在用户控制模式下自动打开，阀门显示失联
-            if(g_run_params.rf_comm_timer >= 3700)//1800   1800s == 30min
+            if(g_run_params.rf_comm_timer >= UNIT_HOUR)//  UNIT_HOUR
             {
                 g_run_params.rf_comm_timer = 0;   //阀门和温控器失联计时
                 g_run_params.rf_comm_flag = 0;  //温控器失联标志
@@ -160,8 +158,18 @@ void vTask_Calculate(void *pvParameters)
             g_run_params.Rtc_check_timer++;
         }
         
+        //自动初始化无线每35分钟初始化一次无线模块
+        {
+            rf433_init_timer++;
+            if(rf433_init_timer >= 35*UNIT_MIN)
+            {
+                rf433_init_timer = 0;
+                rf433_init();//初始化无线
+            }
+        }
+        
         //等待延时
-        vTaskDelayUntil( (TickType_t*)&xLastExecutionTime, (TickType_t)1000 );
+        vTaskDelayUntil( (TickType_t*)&xLastExecutionTime, (TickType_t)1000 );//1000 单位ms
     }
     
     //while(1);//正常不会执行到这里

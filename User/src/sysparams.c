@@ -33,6 +33,13 @@ SysParams g_sys_params;
 RunParams g_run_params;
 AutoTestStruct AutoTest;
 
+//系统复位
+void soft_reset()
+{
+    __set_PRIMASK(1); //这里禁止全局中断(除了NMI和HardFault)。在移植文件port.c中的函数prvStartFirstTask中会重新开启全局中断。
+    NVIC_SystemReset();//系统复位
+}
+
 void sys_factory_reset(void)
 {
     struct tm t;

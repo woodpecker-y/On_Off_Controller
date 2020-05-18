@@ -96,7 +96,7 @@ u8 valve_action(void)
                 //rturn_st = 0;
             }
             
-            motor_run(E_MOTOR_SWITCH_OPENED);
+            //motor_run(E_MOTOR_SWITCH_OPENED);
             if(motor_get_state() == MOTOR_STATE_OPENED)
             {
                 g_run_params.ValveState = VALVE_OPEN;
@@ -118,6 +118,10 @@ u8 valve_action(void)
                     rturn_st = 0;
                 }
             }
+            else
+            {
+                motor_run(E_MOTOR_SWITCH_OPENED);
+            }
             
         }
         else if(g_sys_params.ValveCtrlDemandFlg == VALVE_CLOSE)//用户控制关阀
@@ -135,7 +139,7 @@ u8 valve_action(void)
                 //rturn_st = 0;
             }
             
-            motor_run(E_MOTOR_SWITCH_CLOSED);
+            //motor_run(E_MOTOR_SWITCH_CLOSED);
             if(motor_get_state() == MOTOR_STATE_CLOSED)
             {
                 g_run_params.ValveState = VALVE_CLOSE;
@@ -157,19 +161,26 @@ u8 valve_action(void)
                     rturn_st = 0;
                 }
             }
+            else
+            {
+                motor_run(E_MOTOR_SWITCH_CLOSED);
+            }
             
         }
     }
 #if OUTAGE_POWER_SWITCH
     else if(g_run_params.PowerDownFlag == 0)
     {
-        motor_run(E_MOTOR_SWITCH_OPENED);
+        //motor_run(E_MOTOR_SWITCH_OPENED);
         if(motor_get_state() == MOTOR_STATE_OPENED)
         {
             g_run_params.ValveState = VALVE_OPEN;
             disp_valve_state(E_DISPLAY_VALVE_OPEN);
             motor_stop();
             rturn_st = 0;
+        }
+        else{
+            motor_run(E_MOTOR_SWITCH_OPENED);
         }
     }
 #endif

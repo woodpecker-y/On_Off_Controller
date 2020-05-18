@@ -51,6 +51,19 @@ void hardware_init(void)
     
 	//adf_init();//主要是使用软定时器
     
+    //PVD初始化
+    pvd_init();
+    //PVD
+    if(pvd_get_state() == 1)//当低电压时
+    {
+        while(1)
+        {
+            disp_clear();//清空显示
+            if(pvd_get_state() == 0)//当高电压
+                break;
+        }
+    }
+    
     /*! \brief 调试日志等级  【 L_NONE = 0, 关闭 】【 L_ERROR = 1, 错误 】【 L_WARN  = 2, 警告 】\
                             【 L_TRACE = 3, 轨迹】【 L_INFO  = 4, 信息 】【 L_DEBUG = 5, 调试 】【 L_ALL   = 6, 全部 】 */
     MYLOG_LEVEL(L_DEBUG);
@@ -270,7 +283,6 @@ void system_print(void)
 }
 #endif
 
-
 int main(void)
 {
     BaseType_t xReturn = pdPASS;/* 定义一个创建信息返回值，默认为pdPASS */
@@ -282,8 +294,7 @@ int main(void)
 #if DEBUG_SWITCH
     system_print();
 #endif
-    //PVD初始化
-    pvd_init();
+    
     //看门狗初始化
     wdg_init(5);
     /* 基本定时器初始化	*/

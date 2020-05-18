@@ -15,8 +15,8 @@ extern const char *foryon;
 //阀门系统功能裁剪
 #define ONE_WEEK_SWITCH           1     //一周自转功能
 #define OUTAGE_POWER_SWITCH       1     //断电开阀功能
-#define RF_LOSS_OPEN_VALVE_SWITCH 1     //用户控制模式无线失联则打开阀门
-#define DEBUG_SWITCH              1     //调试日志开关
+#define RF_LOSS_OPEN_VALVE_SWITCH 1     //用户控制模式无线失联则打开阀门  一个小时没有和温控器建立连接则表示失联，则阀门在用户控制模式下自动打开，阀门显示失联
+#define DEBUG_SWITCH              0     //调试日志开关
 #define IN_OUT_TEMP_SWITCH        1     //进回水温度开关
 #define LCD_SWITCH                1     //液晶屏开关
     
@@ -230,6 +230,10 @@ typedef struct auto_test_struct{
 extern SysParams g_sys_params;
 extern RunParams g_run_params;
 extern AutoTestStruct AutoTest;
+
+//系统复位
+void soft_reset(void);
+
 //恢复出厂设置
 void sys_factory_reset(void);
 

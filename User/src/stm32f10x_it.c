@@ -111,9 +111,13 @@ void EXTI15_10_IRQHandler(void)
   	if(EXTI_GetITStatus(EXTI_Line13) != RESET)
 	{
         if(exti_read_state(0) == 0)
+        {
             g_run_params.PowerDownFlag = 0;     //∂œµÁ
+        }
         else
+        {
             g_run_params.PowerDownFlag = 1;     //…œµÁ
+        }
 
 	    /* Clear the  EXTI line 5 pending bit */
 	    EXTI_ClearITPendingBit(EXTI_Line13);			

@@ -40,7 +40,7 @@ void vTask_Com_Rf_Valve(void *pvParameters)
         valve_deal();
         
         //等待延时
-        vTaskDelayUntil( (TickType_t*)&xLastExecutionTime, (TickType_t)50 );
+        vTaskDelayUntil( (TickType_t*)&xLastExecutionTime, (TickType_t)50 );//单位ms
     }
     
     //while(1);//正常不会执行到这里

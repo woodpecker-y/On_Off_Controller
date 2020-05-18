@@ -23,7 +23,7 @@
 ".\app\obj\timers.o"
 ".\app\obj\port.o"
 ".\app\obj\heap_4.o"
---library_type=microlib --strict --scatter ".\App\Obj\tongDuanKongZhiQi_0109.sct"
+--library_type=microlib --strict --scatter ".\App\Obj\App516.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
---list ".\App\Lst\tongDuanKongZhiQi_0109.map" -o .\App\Obj\tongDuanKongZhiQi_0109.axf
+--list ".\App\Lst\App516.map" -o .\App\Obj\App516.axf

@@ -133,7 +133,7 @@ unsigned char fy_protocol_unpack(FY_PROTOCOLPkg *pkg, unsigned char *packaged_da
         else if(device_sn == g_sys_params.Device_SN)
         {
             //所有不支持广播的协议命令
-            if( packaged_data[10]!=0 && packaged_data[10]!=59 && packaged_data[10]!=60 && packaged_data[10]!=200)
+            if( packaged_data[10]!=0 && packaged_data[10]!=54 && packaged_data[10]!=55 && packaged_data[10]!=59 && packaged_data[10]!=60 && packaged_data[10]!=200)
                 return FY_PROTOCOL_ERR_ADDR;//地址不匹配
         }
     }
@@ -469,8 +469,8 @@ u8 fy_protocol_func_request(FY_PROTOCOLPkg *pkg, RunParams *run_params, SysParam
                     
                 }
                 
-                //系统设定温标志  0x00 用户设定类型     0xAA 系统设定类型
-                if(pkg->data[20]==0x00 || pkg->data[20]==0xAA )
+                //系统设定温标志  0xFF 用户设定类型     0xAA 系统设定类型
+                if(pkg->data[20]==0xFF || pkg->data[20]==0xAA)
                 {
                     sys_params->TempCtrlType =  pkg->data[20];
                 }
@@ -484,7 +484,7 @@ u8 fy_protocol_func_request(FY_PROTOCOLPkg *pkg, RunParams *run_params, SysParam
                 }
                 
                 //极限温度设置标志   0XAA系统设定极限    0XFF系统取消设定
-                if(pkg->data[23]==0xAA || pkg->data[23]==0xFF) 
+                if(pkg->data[23]==0xAA || pkg->data[23]==0xFF)
                 {
                     sys_params->LimtTE_Flag =  pkg->data[23];
                 }

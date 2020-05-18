@@ -75,26 +75,36 @@ void vTask_Power_Display_Temp_Runled(void *pvParameters)
 
 
 #if OUTAGE_POWER_SWITCH
+
+u8 powerdel_flag = 0;//执行过 "掉电开阀动作" 标志
 //断电检测
 void Power_detect(void)
 {
     //掉电检测
     if(exti_read_state(0) == 0)//断电
     {
-        if(g_run_params.PowerDownFlag == 1)
+        if(g_run_params.PowerDownFlag == 0)
         {
-            disp_battery_state(E_DISPLAY_ON);   //显示掉电
-            valve_triggered();
+            if(powerdel_flag == 0)
+            {
+                disp_battery_state(E_DISPLAY_ON);   //显示掉电
+                powerdel_flag = 1;
+                valve_triggered();
+            }
         }
         g_run_params.PowerDownFlag = 0;         //断电
-        
     }
     else
     {
-        if(g_run_params.PowerDownFlag == 0)
+        if(g_run_params.PowerDownFlag == 1)
         {
-            disp_battery_state(E_DISPLAY_OFF);  //显示上电
-            valve_triggered();
+            if(powerdel_flag == 1)
+            {
+                disp_battery_state(E_DISPLAY_OFF);  //显示上电
+                powerdel_flag = 0;
+                soft_reset();//系统复位
+                //valve_triggered();
+            }
         }
         g_run_params.PowerDownFlag = 1;     //上电
         

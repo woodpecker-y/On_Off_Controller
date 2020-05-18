@@ -1,0 +1,6 @@
+--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\User\inc -I ..\..\HAL\inc -I ..\..\Board -I ..\..\Lib\include\BSP -I ..\..\Lib\include\Libraries -I ..\..\Lib\include\HAL -I ..\..\Lib\include -I ..\..\Lib\include\Utili -I ..\..\Lib\include\Module\DevMgr -I ..\..\Lib\include\Module\FileSystem -I ..\..\Lib\include\Module\Font -I ..\..\FreeRTOS\include -I ..\..\FreeRTOS\port\RVDS\ARM_CM3 -I ..\..\User\TimBase -I ..\..\Task\inc
+-I.\RTE\_tongDuanKongZhiQi
+-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+-IC:\Keil_v5\ARM\CMSIS\Include
+-D__UVISION_VERSION="528" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDEBUG -DHAVE_COM -DHAVE_RTC -DHAVE_EXTI -DHAVE_WDG -DHAVE_RF -DHAVE_MOTOR -DHAVE_HT1621 -DHAVE_FLASH -DHAVE_ENCRYPT -DHAVE_FILESYSTEM -DHAVE_FLASH_EXT -DHAVE_FLASH -DHAVE_LED -DHAVE_LCD -DHAVE_ADC -DHAVE_SYSTIMER -DHAVE_DBG -DHAVE_PVD
+-o .\app\obj\vtask_calculate.o --omf_browse .\app\obj\vtask_calculate.crf --depend .\app\obj\vtask_calculate.d "..\..\Task\src\vTask_Calculate.c"
