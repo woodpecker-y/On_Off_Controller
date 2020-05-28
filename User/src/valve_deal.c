@@ -86,7 +86,7 @@ u8 valve_action(void)
         if(g_run_params.Plug_valve_state != 0x00)//如果堵转的情况下会每5分钟检测一次堵转是否清理
         {
             plug_valve_clear_timer++;
-            if(plug_valve_clear_timer >= 6000)//计时5分钟
+            if(plug_valve_clear_timer >= 6000)//6000*50ms == 300s == 计时5分钟
             {
                 plug_valve_timer = 0;
                 g_run_params.Plug_valve_state = 0x00;//清除堵转标志
@@ -151,7 +151,7 @@ u8 valve_action(void)
         {
             //堵阀计时
             plug_valve_timer++;
-            if(plug_valve_timer >= 400) //400ms==20s
+            if(plug_valve_timer >= 400) //400*50ms==20s
             {
                 g_run_params.Plug_valve_state = 0x50;//关阀堵转
 
