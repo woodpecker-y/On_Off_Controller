@@ -469,8 +469,8 @@ u8 fy_protocol_func_request(FY_PROTOCOLPkg *pkg, RunParams *run_params, SysParam
                     
                 }
                 
-                //系统设定温标志  0xFF 用户设定类型     0xAA 系统设定类型
-                if(pkg->data[20]==0xFF || pkg->data[20]==0xAA)
+                //系统设定温标志  0x00 用户设定类型     0xAA 系统设定类型
+                if(pkg->data[20]==0x00 || pkg->data[20]==0xAA)
                 {
                     sys_params->TempCtrlType =  pkg->data[20];
                 }

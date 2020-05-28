@@ -7,8 +7,8 @@
 #include "error.h"
 
 //软硬件版本号
-#define HARDWARE_VERSION          11    //硬件版本号 11 表示V1.1
-#define SOFTWARE_VERSION          60    //软件版本号 60 为延续老版本通断阀协议
+#define HARDWARE_VERSION          12    //硬件版本号 11 表示V1.1
+#define SOFTWARE_VERSION          61    //软件版本号 60 为延续老版本通断阀协议
 extern const char *foryon;
 //extern const char *foryon_log;
 

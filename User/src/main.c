@@ -146,6 +146,7 @@ void hardware_init(void)
     
 	lcd_init();
     BSP_GPIO_Init(PORTB, PIN6, GPIO_Mode_IN_FLOATING);//IRQ
+    
     disp_poll();
     disp_signal_state(E_DISPLAY_OFF);//无线显示关闭
     
@@ -208,7 +209,7 @@ void software_init(void)
 void system_print(void)
 {
     //显示版本号
-    disp_sys_version(g_sys_params.Version_H, g_sys_params.Version_S);
+    //disp_sys_version(g_sys_params.Version_H, g_sys_params.Version_S);
 
     //设备参数
     MYLOG_DEBUG(" ****************************** 设备参数 **************************************\r\n");
@@ -290,6 +291,11 @@ int main(void)
     hardware_init();
     // 软件初始化
     software_init();
+    
+    //显示版本号
+    disp_sys_version(g_sys_params.Version_H, g_sys_params.Version_S);
+    DELAY_MS(2000);
+    
     // 系统输出
 #if DEBUG_SWITCH
     system_print();

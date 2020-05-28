@@ -1,5 +1,5 @@
 Dependencies for Project 'Project', Target 'tongDuanKongZhiQi': (DO NOT MODIFY !)
-F (..\..\Board\board.c)(0x5E05DE03)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\User\inc -I ..\..\HAL\inc -I ..\..\Board -I ..\..\Lib\include\BSP -I ..\..\Lib\include\Libraries -I ..\..\Lib\include\HAL -I ..\..\Lib\include -I ..\..\Lib\include\Utili -I ..\..\Lib\include\Module\DevMgr -I ..\..\Lib\include\Module\FileSystem -I ..\..\Lib\include\Module\Font -I ..\..\FreeRTOS\include -I ..\..\FreeRTOS\port\RVDS\ARM_CM3 -I ..\..\User\TimBase -I ..\..\Task\inc-I.\RTE\_tongDuanKongZhiQi-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDEBUG -DHAVE_COM -DHAVE_RTC -DHAVE_EXTI -DHAVE_WDG -DHAVE_RF -DHAVE_MOTOR -DHAVE_HT1621 -DHAVE_FLASH -DHAVE_ENCRYPT -DHAVE_FILESYSTEM -DHAVE_FLASH_EXT -DHAVE_FLASH -DHAVE_LED -DHAVE_LCD -DHAVE_ADC -DHAVE_SYSTIMER -DHAVE_DBG -DHAVE_PVD-o .\app\obj\board.o --omf_browse .\app\obj\board.crf --depend .\app\obj\board.d)
+F (..\..\Board\board.c)(0x5EC37D0B)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\User\inc -I ..\..\HAL\inc -I ..\..\Board -I ..\..\Lib\include\BSP -I ..\..\Lib\include\Libraries -I ..\..\Lib\include\HAL -I ..\..\Lib\include -I ..\..\Lib\include\Utili -I ..\..\Lib\include\Module\DevMgr -I ..\..\Lib\include\Module\FileSystem -I ..\..\Lib\include\Module\Font -I ..\..\FreeRTOS\include -I ..\..\FreeRTOS\port\RVDS\ARM_CM3 -I ..\..\User\TimBase -I ..\..\Task\inc-I.\RTE\_tongDuanKongZhiQi-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDEBUG -DHAVE_COM -DHAVE_RTC -DHAVE_EXTI -DHAVE_WDG -DHAVE_RF -DHAVE_MOTOR -DHAVE_HT1621 -DHAVE_FLASH -DHAVE_ENCRYPT -DHAVE_FILESYSTEM -DHAVE_FLASH_EXT -DHAVE_FLASH -DHAVE_LED -DHAVE_LCD -DHAVE_ADC -DHAVE_SYSTIMER -DHAVE_DBG -DHAVE_PVD-o .\app\obj\board.o --omf_browse .\app\obj\board.crf --depend .\app\obj\board.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (..\..\Lib\include\adf.h)(0x5D9A8655)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
@@ -75,7 +75,7 @@ I (..\..\Lib\include\Utili\check.h)(0x59FFF125)
 I (..\..\Board\board.h)(0x5E16CE0F)
 F (..\..\Board\board.h)(0x5E16CE0F)()
 F (..\..\Lib\ADF.lib)(0x5DEF6B63)()
-F (..\..\User\src\main.c)(0x5EBF6547)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\User\inc -I ..\..\HAL\inc -I ..\..\Board -I ..\..\Lib\include\BSP -I ..\..\Lib\include\Libraries -I ..\..\Lib\include\HAL -I ..\..\Lib\include -I ..\..\Lib\include\Utili -I ..\..\Lib\include\Module\DevMgr -I ..\..\Lib\include\Module\FileSystem -I ..\..\Lib\include\Module\Font -I ..\..\FreeRTOS\include -I ..\..\FreeRTOS\port\RVDS\ARM_CM3 -I ..\..\User\TimBase -I ..\..\Task\inc-I.\RTE\_tongDuanKongZhiQi-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDEBUG -DHAVE_COM -DHAVE_RTC -DHAVE_EXTI -DHAVE_WDG -DHAVE_RF -DHAVE_MOTOR -DHAVE_HT1621 -DHAVE_FLASH -DHAVE_ENCRYPT -DHAVE_FILESYSTEM -DHAVE_FLASH_EXT -DHAVE_FLASH -DHAVE_LED -DHAVE_LCD -DHAVE_ADC -DHAVE_SYSTIMER -DHAVE_DBG -DHAVE_PVD-o .\app\obj\main.o --omf_browse .\app\obj\main.crf --depend .\app\obj\main.d)
+F (..\..\User\src\main.c)(0x5EC869C2)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\User\inc -I ..\..\HAL\inc -I ..\..\Board -I ..\..\Lib\include\BSP -I ..\..\Lib\include\Libraries -I ..\..\Lib\include\HAL -I ..\..\Lib\include -I ..\..\Lib\include\Utili -I ..\..\Lib\include\Module\DevMgr -I ..\..\Lib\include\Module\FileSystem -I ..\..\Lib\include\Module\Font -I ..\..\FreeRTOS\include -I ..\..\FreeRTOS\port\RVDS\ARM_CM3 -I ..\..\User\TimBase -I ..\..\Task\inc-I.\RTE\_tongDuanKongZhiQi-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDEBUG -DHAVE_COM -DHAVE_RTC -DHAVE_EXTI -DHAVE_WDG -DHAVE_RF -DHAVE_MOTOR -DHAVE_HT1621 -DHAVE_FLASH -DHAVE_ENCRYPT -DHAVE_FILESYSTEM -DHAVE_FLASH_EXT -DHAVE_FLASH -DHAVE_LED -DHAVE_LCD -DHAVE_ADC -DHAVE_SYSTIMER -DHAVE_DBG -DHAVE_PVD-o .\app\obj\main.o --omf_browse .\app\obj\main.crf --depend .\app\obj\main.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
@@ -168,11 +168,11 @@ I (..\..\Task\inc\vTask_Calculate.h)(0x5E00329D)
 I (..\..\Task\inc\vTaskRunTimeStats.h)(0x5DEF41A9)
 I (..\..\User\inc\bsp_TiMbase.h)(0x5DA01A9C)
 I (..\..\User\inc\display.h)(0x5E05E119)
-I (..\..\User\inc\sysparams.h)(0x5EBFBC5B)
+I (..\..\User\inc\sysparams.h)(0x5EC37DCF)
 I (..\..\User\inc\valve_deal.h)(0x5E02B6C9)
 I (..\..\User\inc\error.h)(0x5E02C7E5)
 F (..\..\User\inc\FreeRTOSConfig.h)(0x5E0D9956)()
-F (..\..\User\inc\sysparams.h)(0x5EBFBC5B)()
+F (..\..\User\inc\sysparams.h)(0x5EC37DCF)()
 F (..\..\Lib\include\Utili\utili.h)(0x59FFF125)()
 F (..\..\User\src\sysparams.c)(0x5EBF3B75)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\User\inc -I ..\..\HAL\inc -I ..\..\Board -I ..\..\Lib\include\BSP -I ..\..\Lib\include\Libraries -I ..\..\Lib\include\HAL -I ..\..\Lib\include -I ..\..\Lib\include\Utili -I ..\..\Lib\include\Module\DevMgr -I ..\..\Lib\include\Module\FileSystem -I ..\..\Lib\include\Module\Font -I ..\..\FreeRTOS\include -I ..\..\FreeRTOS\port\RVDS\ARM_CM3 -I ..\..\User\TimBase -I ..\..\Task\inc-I.\RTE\_tongDuanKongZhiQi-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDEBUG -DHAVE_COM -DHAVE_RTC -DHAVE_EXTI -DHAVE_WDG -DHAVE_RF -DHAVE_MOTOR -DHAVE_HT1621 -DHAVE_FLASH -DHAVE_ENCRYPT -DHAVE_FILESYSTEM -DHAVE_FLASH_EXT -DHAVE_FLASH -DHAVE_LED -DHAVE_LCD -DHAVE_ADC -DHAVE_SYSTIMER -DHAVE_DBG -DHAVE_PVD-o .\app\obj\sysparams.o --omf_browse .\app\obj\sysparams.crf --depend .\app\obj\sysparams.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEB79E2)
@@ -249,7 +249,7 @@ I (..\..\Lib\include\Module\FileSystem\filesystem.h)(0x5D73181D)
 I (..\..\Lib\include\Utili\des.h)(0x59FFF125)
 I (..\..\Lib\include\HAL\utili.h)(0x59FFF122)
 I (..\..\Lib\include\Utili\check.h)(0x59FFF125)
-I (..\..\User\inc\sysparams.h)(0x5EBFBC5B)
+I (..\..\User\inc\sysparams.h)(0x5EC37DCF)
 I (..\..\User\inc\valve_deal.h)(0x5E02B6C9)
 I (..\..\User\inc\error.h)(0x5E02C7E5)
 F (..\..\User\src\stm32f10x_it.c)(0x5EBF729D)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\User\inc -I ..\..\HAL\inc -I ..\..\Board -I ..\..\Lib\include\BSP -I ..\..\Lib\include\Libraries -I ..\..\Lib\include\HAL -I ..\..\Lib\include -I ..\..\Lib\include\Utili -I ..\..\Lib\include\Module\DevMgr -I ..\..\Lib\include\Module\FileSystem -I ..\..\Lib\include\Module\Font -I ..\..\FreeRTOS\include -I ..\..\FreeRTOS\port\RVDS\ARM_CM3 -I ..\..\User\TimBase -I ..\..\Task\inc-I.\RTE\_tongDuanKongZhiQi-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDEBUG -DHAVE_COM -DHAVE_RTC -DHAVE_EXTI -DHAVE_WDG -DHAVE_RF -DHAVE_MOTOR -DHAVE_HT1621 -DHAVE_FLASH -DHAVE_ENCRYPT -DHAVE_FILESYSTEM -DHAVE_FLASH_EXT -DHAVE_FLASH -DHAVE_LED -DHAVE_LCD -DHAVE_ADC -DHAVE_SYSTIMER -DHAVE_DBG -DHAVE_PVD-o .\app\obj\stm32f10x_it.o --omf_browse .\app\obj\stm32f10x_it.crf --depend .\app\obj\stm32f10x_it.d)
@@ -339,7 +339,7 @@ I (..\..\Lib\include\Module\FileSystem\filesystem.h)(0x5D73181D)
 I (..\..\Lib\include\Utili\des.h)(0x59FFF125)
 I (..\..\Lib\include\HAL\utili.h)(0x59FFF122)
 I (..\..\Lib\include\Utili\check.h)(0x59FFF125)
-I (..\..\User\inc\sysparams.h)(0x5EBFBC5B)
+I (..\..\User\inc\sysparams.h)(0x5EC37DCF)
 I (..\..\User\inc\valve_deal.h)(0x5E02B6C9)
 I (..\..\User\inc\error.h)(0x5E02C7E5)
 I (..\..\Task\inc\app_task.h)(0x5E0F0214)
@@ -422,7 +422,7 @@ I (..\..\Lib\include\Module\FileSystem\filesystem.h)(0x5D73181D)
 I (..\..\Lib\include\Utili\des.h)(0x59FFF125)
 I (..\..\Lib\include\HAL\utili.h)(0x59FFF122)
 I (..\..\Lib\include\Utili\check.h)(0x59FFF125)
-F (..\..\User\src\fy_protocol.c)(0x5EBF9D8B)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\User\inc -I ..\..\HAL\inc -I ..\..\Board -I ..\..\Lib\include\BSP -I ..\..\Lib\include\Libraries -I ..\..\Lib\include\HAL -I ..\..\Lib\include -I ..\..\Lib\include\Utili -I ..\..\Lib\include\Module\DevMgr -I ..\..\Lib\include\Module\FileSystem -I ..\..\Lib\include\Module\Font -I ..\..\FreeRTOS\include -I ..\..\FreeRTOS\port\RVDS\ARM_CM3 -I ..\..\User\TimBase -I ..\..\Task\inc-I.\RTE\_tongDuanKongZhiQi-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDEBUG -DHAVE_COM -DHAVE_RTC -DHAVE_EXTI -DHAVE_WDG -DHAVE_RF -DHAVE_MOTOR -DHAVE_HT1621 -DHAVE_FLASH -DHAVE_ENCRYPT -DHAVE_FILESYSTEM -DHAVE_FLASH_EXT -DHAVE_FLASH -DHAVE_LED -DHAVE_LCD -DHAVE_ADC -DHAVE_SYSTIMER -DHAVE_DBG -DHAVE_PVD-o .\app\obj\fy_protocol.o --omf_browse .\app\obj\fy_protocol.crf --depend .\app\obj\fy_protocol.d)
+F (..\..\User\src\fy_protocol.c)(0x5EC63DD1)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\User\inc -I ..\..\HAL\inc -I ..\..\Board -I ..\..\Lib\include\BSP -I ..\..\Lib\include\Libraries -I ..\..\Lib\include\HAL -I ..\..\Lib\include -I ..\..\Lib\include\Utili -I ..\..\Lib\include\Module\DevMgr -I ..\..\Lib\include\Module\FileSystem -I ..\..\Lib\include\Module\Font -I ..\..\FreeRTOS\include -I ..\..\FreeRTOS\port\RVDS\ARM_CM3 -I ..\..\User\TimBase -I ..\..\Task\inc-I.\RTE\_tongDuanKongZhiQi-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDEBUG -DHAVE_COM -DHAVE_RTC -DHAVE_EXTI -DHAVE_WDG -DHAVE_RF -DHAVE_MOTOR -DHAVE_HT1621 -DHAVE_FLASH -DHAVE_ENCRYPT -DHAVE_FILESYSTEM -DHAVE_FLASH_EXT -DHAVE_FLASH -DHAVE_LED -DHAVE_LCD -DHAVE_ADC -DHAVE_SYSTIMER -DHAVE_DBG -DHAVE_PVD-o .\app\obj\fy_protocol.o --omf_browse .\app\obj\fy_protocol.crf --depend .\app\obj\fy_protocol.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
@@ -497,7 +497,7 @@ I (..\..\Lib\include\Module\FileSystem\filesystem.h)(0x5D73181D)
 I (..\..\Lib\include\Utili\des.h)(0x59FFF125)
 I (..\..\Lib\include\HAL\utili.h)(0x59FFF122)
 I (..\..\Lib\include\Utili\check.h)(0x59FFF125)
-I (..\..\User\inc\sysparams.h)(0x5EBFBC5B)
+I (..\..\User\inc\sysparams.h)(0x5EC37DCF)
 I (..\..\User\inc\valve_deal.h)(0x5E02B6C9)
 I (..\..\User\inc\error.h)(0x5E02C7E5)
 I (..\..\User\inc\fy_protocol.h)(0x5E034E7E)
@@ -532,7 +532,7 @@ I (..\..\Lib\include\Libraries\stm32f10x_tim.h)(0x59FFF116)
 I (..\..\Lib\include\Libraries\stm32f10x_usart.h)(0x59FFF116)
 I (..\..\Lib\include\Libraries\stm32f10x_wwdg.h)(0x59FFF116)
 I (..\..\Lib\include\Libraries\misc.h)(0x59FFF116)
-F (..\..\User\src\valve_deal.c)(0x5EC2070D)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\User\inc -I ..\..\HAL\inc -I ..\..\Board -I ..\..\Lib\include\BSP -I ..\..\Lib\include\Libraries -I ..\..\Lib\include\HAL -I ..\..\Lib\include -I ..\..\Lib\include\Utili -I ..\..\Lib\include\Module\DevMgr -I ..\..\Lib\include\Module\FileSystem -I ..\..\Lib\include\Module\Font -I ..\..\FreeRTOS\include -I ..\..\FreeRTOS\port\RVDS\ARM_CM3 -I ..\..\User\TimBase -I ..\..\Task\inc-I.\RTE\_tongDuanKongZhiQi-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDEBUG -DHAVE_COM -DHAVE_RTC -DHAVE_EXTI -DHAVE_WDG -DHAVE_RF -DHAVE_MOTOR -DHAVE_HT1621 -DHAVE_FLASH -DHAVE_ENCRYPT -DHAVE_FILESYSTEM -DHAVE_FLASH_EXT -DHAVE_FLASH -DHAVE_LED -DHAVE_LCD -DHAVE_ADC -DHAVE_SYSTIMER -DHAVE_DBG -DHAVE_PVD-o .\app\obj\valve_deal.o --omf_browse .\app\obj\valve_deal.crf --depend .\app\obj\valve_deal.d)
+F (..\..\User\src\valve_deal.c)(0x5ECF1DBA)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\User\inc -I ..\..\HAL\inc -I ..\..\Board -I ..\..\Lib\include\BSP -I ..\..\Lib\include\Libraries -I ..\..\Lib\include\HAL -I ..\..\Lib\include -I ..\..\Lib\include\Utili -I ..\..\Lib\include\Module\DevMgr -I ..\..\Lib\include\Module\FileSystem -I ..\..\Lib\include\Module\Font -I ..\..\FreeRTOS\include -I ..\..\FreeRTOS\port\RVDS\ARM_CM3 -I ..\..\User\TimBase -I ..\..\Task\inc-I.\RTE\_tongDuanKongZhiQi-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDEBUG -DHAVE_COM -DHAVE_RTC -DHAVE_EXTI -DHAVE_WDG -DHAVE_RF -DHAVE_MOTOR -DHAVE_HT1621 -DHAVE_FLASH -DHAVE_ENCRYPT -DHAVE_FILESYSTEM -DHAVE_FLASH_EXT -DHAVE_FLASH -DHAVE_LED -DHAVE_LCD -DHAVE_ADC -DHAVE_SYSTIMER -DHAVE_DBG -DHAVE_PVD-o .\app\obj\valve_deal.o --omf_browse .\app\obj\valve_deal.crf --depend .\app\obj\valve_deal.d)
 I (..\..\Lib\include\BSP\bsp.h)(0x5DEF683D)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
@@ -607,7 +607,7 @@ I (..\..\Lib\include\Utili\des.h)(0x59FFF125)
 I (..\..\Lib\include\HAL\utili.h)(0x59FFF122)
 I (..\..\Lib\include\Utili\check.h)(0x59FFF125)
 I (..\..\User\inc\display.h)(0x5E05E119)
-I (..\..\User\inc\sysparams.h)(0x5EBFBC5B)
+I (..\..\User\inc\sysparams.h)(0x5EC37DCF)
 I (..\..\User\inc\valve_deal.h)(0x5E02B6C9)
 I (..\..\User\inc\error.h)(0x5E02C7E5)
 F (..\..\User\src\recv_data_deal.c)(0x5E1924DF)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\User\inc -I ..\..\HAL\inc -I ..\..\Board -I ..\..\Lib\include\BSP -I ..\..\Lib\include\Libraries -I ..\..\Lib\include\HAL -I ..\..\Lib\include -I ..\..\Lib\include\Utili -I ..\..\Lib\include\Module\DevMgr -I ..\..\Lib\include\Module\FileSystem -I ..\..\Lib\include\Module\Font -I ..\..\FreeRTOS\include -I ..\..\FreeRTOS\port\RVDS\ARM_CM3 -I ..\..\User\TimBase -I ..\..\Task\inc-I.\RTE\_tongDuanKongZhiQi-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDEBUG -DHAVE_COM -DHAVE_RTC -DHAVE_EXTI -DHAVE_WDG -DHAVE_RF -DHAVE_MOTOR -DHAVE_HT1621 -DHAVE_FLASH -DHAVE_ENCRYPT -DHAVE_FILESYSTEM -DHAVE_FLASH_EXT -DHAVE_FLASH -DHAVE_LED -DHAVE_LCD -DHAVE_ADC -DHAVE_SYSTIMER -DHAVE_DBG -DHAVE_PVD-o .\app\obj\recv_data_deal.o --omf_browse .\app\obj\recv_data_deal.crf --depend .\app\obj\recv_data_deal.d)
@@ -701,7 +701,7 @@ I (..\..\Lib\include\Utili\des.h)(0x59FFF125)
 I (..\..\Lib\include\HAL\utili.h)(0x59FFF122)
 I (..\..\Lib\include\Utili\check.h)(0x59FFF125)
 I (..\..\User\inc\display.h)(0x5E05E119)
-I (..\..\User\inc\sysparams.h)(0x5EBFBC5B)
+I (..\..\User\inc\sysparams.h)(0x5EC37DCF)
 I (..\..\User\inc\valve_deal.h)(0x5E02B6C9)
 I (..\..\User\inc\error.h)(0x5E02C7E5)
 I (..\..\User\inc\recv_data_deal.h)(0x5E018A30)
@@ -763,7 +763,7 @@ I (..\..\Lib\include\BSP\ba6289.h)(0x5D73181D)
 I (..\..\Lib\include\HAL\motor.h)(0x59FFF116)
 I (..\..\Lib\include\BSP\bsp_wdg.h)(0x59FFF114)
 I (..\..\Lib\include\BSP\delay.h)(0x5D73181D)
-I (..\..\User\inc\sysparams.h)(0x5EBFBC5B)
+I (..\..\User\inc\sysparams.h)(0x5EC37DCF)
 I (..\..\Lib\include\adf.h)(0x5D9A8655)
 I (..\..\Lib\include\HAL\sysclk.h)(0x5D73181D)
 I (..\..\Lib\include\HAL\com.h)(0x5D73181D)
@@ -869,7 +869,7 @@ I (..\..\Lib\include\Utili\des.h)(0x59FFF125)
 I (..\..\Lib\include\HAL\utili.h)(0x59FFF122)
 I (..\..\Lib\include\Utili\check.h)(0x59FFF125)
 I (..\..\User\inc\display.h)(0x5E05E119)
-I (..\..\User\inc\sysparams.h)(0x5EBFBC5B)
+I (..\..\User\inc\sysparams.h)(0x5EC37DCF)
 I (..\..\User\inc\valve_deal.h)(0x5E02B6C9)
 I (..\..\User\inc\error.h)(0x5E02C7E5)
 I (..\..\Task\inc\app_task.h)(0x5E0F0214)
@@ -968,7 +968,7 @@ I (..\..\Lib\include\Utili\des.h)(0x59FFF125)
 I (..\..\Lib\include\HAL\utili.h)(0x59FFF122)
 I (..\..\Lib\include\Utili\check.h)(0x59FFF125)
 I (..\..\User\inc\display.h)(0x5E05E119)
-I (..\..\User\inc\sysparams.h)(0x5EBFBC5B)
+I (..\..\User\inc\sysparams.h)(0x5EC37DCF)
 I (..\..\User\inc\valve_deal.h)(0x5E02B6C9)
 I (..\..\User\inc\error.h)(0x5E02C7E5)
 I (..\..\User\inc\recv_data_deal.h)(0x5E018A30)
@@ -1064,7 +1064,7 @@ I (..\..\Lib\include\Utili\des.h)(0x59FFF125)
 I (..\..\Lib\include\HAL\utili.h)(0x59FFF122)
 I (..\..\Lib\include\Utili\check.h)(0x59FFF125)
 I (..\..\User\inc\display.h)(0x5E05E119)
-I (..\..\User\inc\sysparams.h)(0x5EBFBC5B)
+I (..\..\User\inc\sysparams.h)(0x5EC37DCF)
 I (..\..\User\inc\valve_deal.h)(0x5E02B6C9)
 I (..\..\User\inc\error.h)(0x5E02C7E5)
 F (..\..\Task\src\vTask_Calculate.c)(0x5EBFBF47)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\User\inc -I ..\..\HAL\inc -I ..\..\Board -I ..\..\Lib\include\BSP -I ..\..\Lib\include\Libraries -I ..\..\Lib\include\HAL -I ..\..\Lib\include -I ..\..\Lib\include\Utili -I ..\..\Lib\include\Module\DevMgr -I ..\..\Lib\include\Module\FileSystem -I ..\..\Lib\include\Module\Font -I ..\..\FreeRTOS\include -I ..\..\FreeRTOS\port\RVDS\ARM_CM3 -I ..\..\User\TimBase -I ..\..\Task\inc-I.\RTE\_tongDuanKongZhiQi-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDEBUG -DHAVE_COM -DHAVE_RTC -DHAVE_EXTI -DHAVE_WDG -DHAVE_RF -DHAVE_MOTOR -DHAVE_HT1621 -DHAVE_FLASH -DHAVE_ENCRYPT -DHAVE_FILESYSTEM -DHAVE_FLASH_EXT -DHAVE_FLASH -DHAVE_LED -DHAVE_LCD -DHAVE_ADC -DHAVE_SYSTIMER -DHAVE_DBG -DHAVE_PVD-o .\app\obj\vtask_calculate.o --omf_browse .\app\obj\vtask_calculate.crf --depend .\app\obj\vtask_calculate.d)
@@ -1159,7 +1159,7 @@ I (..\..\Lib\include\Utili\des.h)(0x59FFF125)
 I (..\..\Lib\include\HAL\utili.h)(0x59FFF122)
 I (..\..\Lib\include\Utili\check.h)(0x59FFF125)
 I (..\..\User\inc\display.h)(0x5E05E119)
-I (..\..\User\inc\sysparams.h)(0x5EBFBC5B)
+I (..\..\User\inc\sysparams.h)(0x5EC37DCF)
 I (..\..\User\inc\valve_deal.h)(0x5E02B6C9)
 I (..\..\User\inc\error.h)(0x5E02C7E5)
 F (..\..\Task\src\vTaskRunTimeStats.c)(0x5E192202)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\User\inc -I ..\..\HAL\inc -I ..\..\Board -I ..\..\Lib\include\BSP -I ..\..\Lib\include\Libraries -I ..\..\Lib\include\HAL -I ..\..\Lib\include -I ..\..\Lib\include\Utili -I ..\..\Lib\include\Module\DevMgr -I ..\..\Lib\include\Module\FileSystem -I ..\..\Lib\include\Module\Font -I ..\..\FreeRTOS\include -I ..\..\FreeRTOS\port\RVDS\ARM_CM3 -I ..\..\User\TimBase -I ..\..\Task\inc-I.\RTE\_tongDuanKongZhiQi-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDEBUG -DHAVE_COM -DHAVE_RTC -DHAVE_EXTI -DHAVE_WDG -DHAVE_RF -DHAVE_MOTOR -DHAVE_HT1621 -DHAVE_FLASH -DHAVE_ENCRYPT -DHAVE_FILESYSTEM -DHAVE_FLASH_EXT -DHAVE_FLASH -DHAVE_LED -DHAVE_LCD -DHAVE_ADC -DHAVE_SYSTIMER -DHAVE_DBG -DHAVE_PVD-o .\app\obj\vtaskruntimestats.o --omf_browse .\app\obj\vtaskruntimestats.crf --depend .\app\obj\vtaskruntimestats.d)
@@ -1254,7 +1254,7 @@ I (..\..\Lib\include\Utili\des.h)(0x59FFF125)
 I (..\..\Lib\include\HAL\utili.h)(0x59FFF122)
 I (..\..\Lib\include\Utili\check.h)(0x59FFF125)
 I (..\..\User\inc\display.h)(0x5E05E119)
-I (..\..\User\inc\sysparams.h)(0x5EBFBC5B)
+I (..\..\User\inc\sysparams.h)(0x5EC37DCF)
 I (..\..\User\inc\valve_deal.h)(0x5E02B6C9)
 I (..\..\User\inc\error.h)(0x5E02C7E5)
 F (..\..\FreeRTOS\src\croutine.c)(0x573F3A16)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\User\inc -I ..\..\HAL\inc -I ..\..\Board -I ..\..\Lib\include\BSP -I ..\..\Lib\include\Libraries -I ..\..\Lib\include\HAL -I ..\..\Lib\include -I ..\..\Lib\include\Utili -I ..\..\Lib\include\Module\DevMgr -I ..\..\Lib\include\Module\FileSystem -I ..\..\Lib\include\Module\Font -I ..\..\FreeRTOS\include -I ..\..\FreeRTOS\port\RVDS\ARM_CM3 -I ..\..\User\TimBase -I ..\..\Task\inc-I.\RTE\_tongDuanKongZhiQi-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDEBUG -DHAVE_COM -DHAVE_RTC -DHAVE_EXTI -DHAVE_WDG -DHAVE_RF -DHAVE_MOTOR -DHAVE_HT1621 -DHAVE_FLASH -DHAVE_ENCRYPT -DHAVE_FILESYSTEM -DHAVE_FLASH_EXT -DHAVE_FLASH -DHAVE_LED -DHAVE_LCD -DHAVE_ADC -DHAVE_SYSTIMER -DHAVE_DBG -DHAVE_PVD-o .\app\obj\croutine.o --omf_browse .\app\obj\croutine.crf --depend .\app\obj\croutine.d)
@@ -1808,4 +1808,4 @@ I (..\..\FreeRTOS\include\task.h)(0x573F3A16)
 I (..\..\FreeRTOS\include\list.h)(0x573F3A16)
 F (..\..\Docs\README.txt)(0x5E1527D7)()
 F (..\..\Docs\protocol_example.txt)(0x5E0D9D00)()
-F (..\..\Docs\功能描述.txt)(0x5EBF9497)()
+F (..\..\Docs\功能描述.txt)(0x5ECF1C72)()

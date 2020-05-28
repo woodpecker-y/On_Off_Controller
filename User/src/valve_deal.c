@@ -63,7 +63,7 @@ void valve_deal(void)
 //触发阀门动作
 void valve_triggered(void)
 {
-        s_valve_handler.st = E_REDAY; 
+    s_valve_handler.st = E_REDAY; 
 }
 
 //阀门进程处理函数
@@ -72,6 +72,7 @@ u8 valve_action(void)
     static u16 plug_valve_timer = 0;//开阀关阀时间计时，最长时间为20秒
     u8 rturn_st = 1;
     static u16 open_delay_timer = 0, close_delay_timer = 0;
+    static u16 plug_valve_clear_timer = 0;
     
     if(g_run_params.Plug_valve_state != 0x00)
     {
@@ -81,19 +82,33 @@ u8 valve_action(void)
     //阀门动作
     if(g_run_params.PowerDownFlag == 1)//上电的情况下执行
     {
+        //2020/05/27 堵转复位程序
+        if(g_run_params.Plug_valve_state != 0x00)//如果堵转的情况下会每5分钟检测一次堵转是否清理
+        {
+            plug_valve_clear_timer++;
+            if(plug_valve_clear_timer >= 6000)//计时5分钟
+            {
+                plug_valve_timer = 0;
+                g_run_params.Plug_valve_state = 0x00;//清除堵转标志
+            }
+        }
+        else
+        {
+            plug_valve_clear_timer = 0;
+        }
+        //2020/05/27 堵转复位程序END
+        
         if(g_sys_params.ValveCtrlDemandFlg == VALVE_OPEN)//用户控制开阀
         {
             //堵阀计时
             plug_valve_timer++;
-            if(plug_valve_timer >= 400) //400ms==20s
+            if(plug_valve_timer >= 400) //400*50ms==20s
             {
-                plug_valve_timer = 0;
                 g_run_params.Plug_valve_state = 0x05;//关阀堵转
                 
                 //阀门故障标志
                 error_set(SYS_ERROR_VALVE);
                 disp_valve_state(E_DISPLAY_VALVE_PLUG);//显示堵转标志
-                //rturn_st = 0;
             }
             
             //motor_run(E_MOTOR_SWITCH_OPENED);
@@ -120,7 +135,15 @@ u8 valve_action(void)
             }
             else
             {
-                motor_run(E_MOTOR_SWITCH_OPENED);
+                if(g_run_params.Plug_valve_state == 0x00)
+                {
+                    motor_run(E_MOTOR_SWITCH_OPENED);
+                }
+                if(plug_valve_timer >= 600)//600*50ms==30s
+                {
+                    plug_valve_timer = 0;
+                    motor_stop();//防止堵转时电流增大导致板子发烫，停止堵转
+                }
             }
             
         }
@@ -130,13 +153,11 @@ u8 valve_action(void)
             plug_valve_timer++;
             if(plug_valve_timer >= 400) //400ms==20s
             {
-                plug_valve_timer = 0;
                 g_run_params.Plug_valve_state = 0x50;//关阀堵转
 
                 //阀门故障标志
                 error_set(SYS_ERROR_VALVE);
                 disp_valve_state(E_DISPLAY_VALVE_PLUG);//显示堵转标志
-                //rturn_st = 0;
             }
             
             //motor_run(E_MOTOR_SWITCH_CLOSED);
@@ -163,7 +184,15 @@ u8 valve_action(void)
             }
             else
             {
-                motor_run(E_MOTOR_SWITCH_CLOSED);
+                if(g_run_params.Plug_valve_state == 0x00)
+                {
+                    motor_run(E_MOTOR_SWITCH_CLOSED);
+                }
+                if(plug_valve_timer >= 600)//600*50ms==30s
+                {
+                    plug_valve_timer = 0;
+                    motor_stop();//防止堵转时电流增大导致板子发烫，停止堵转
+                }
             }
             
         }
