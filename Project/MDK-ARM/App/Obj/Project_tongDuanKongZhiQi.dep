@@ -532,7 +532,7 @@ I (..\..\Lib\include\Libraries\stm32f10x_tim.h)(0x59FFF116)
 I (..\..\Lib\include\Libraries\stm32f10x_usart.h)(0x59FFF116)
 I (..\..\Lib\include\Libraries\stm32f10x_wwdg.h)(0x59FFF116)
 I (..\..\Lib\include\Libraries\misc.h)(0x59FFF116)
-F (..\..\User\src\valve_deal.c)(0x5ECF1DBA)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\User\inc -I ..\..\HAL\inc -I ..\..\Board -I ..\..\Lib\include\BSP -I ..\..\Lib\include\Libraries -I ..\..\Lib\include\HAL -I ..\..\Lib\include -I ..\..\Lib\include\Utili -I ..\..\Lib\include\Module\DevMgr -I ..\..\Lib\include\Module\FileSystem -I ..\..\Lib\include\Module\Font -I ..\..\FreeRTOS\include -I ..\..\FreeRTOS\port\RVDS\ARM_CM3 -I ..\..\User\TimBase -I ..\..\Task\inc-I.\RTE\_tongDuanKongZhiQi-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDEBUG -DHAVE_COM -DHAVE_RTC -DHAVE_EXTI -DHAVE_WDG -DHAVE_RF -DHAVE_MOTOR -DHAVE_HT1621 -DHAVE_FLASH -DHAVE_ENCRYPT -DHAVE_FILESYSTEM -DHAVE_FLASH_EXT -DHAVE_FLASH -DHAVE_LED -DHAVE_LCD -DHAVE_ADC -DHAVE_SYSTIMER -DHAVE_DBG -DHAVE_PVD-o .\app\obj\valve_deal.o --omf_browse .\app\obj\valve_deal.crf --depend .\app\obj\valve_deal.d)
+F (..\..\User\src\valve_deal.c)(0x5ECF212D)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\..\User\inc -I ..\..\HAL\inc -I ..\..\Board -I ..\..\Lib\include\BSP -I ..\..\Lib\include\Libraries -I ..\..\Lib\include\HAL -I ..\..\Lib\include -I ..\..\Lib\include\Utili -I ..\..\Lib\include\Module\DevMgr -I ..\..\Lib\include\Module\FileSystem -I ..\..\Lib\include\Module\Font -I ..\..\FreeRTOS\include -I ..\..\FreeRTOS\port\RVDS\ARM_CM3 -I ..\..\User\TimBase -I ..\..\Task\inc-I.\RTE\_tongDuanKongZhiQi-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDEBUG -DHAVE_COM -DHAVE_RTC -DHAVE_EXTI -DHAVE_WDG -DHAVE_RF -DHAVE_MOTOR -DHAVE_HT1621 -DHAVE_FLASH -DHAVE_ENCRYPT -DHAVE_FILESYSTEM -DHAVE_FLASH_EXT -DHAVE_FLASH -DHAVE_LED -DHAVE_LCD -DHAVE_ADC -DHAVE_SYSTIMER -DHAVE_DBG -DHAVE_PVD-o .\app\obj\valve_deal.o --omf_browse .\app\obj\valve_deal.crf --depend .\app\obj\valve_deal.d)
 I (..\..\Lib\include\BSP\bsp.h)(0x5DEF683D)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
@@ -1808,4 +1808,4 @@ I (..\..\FreeRTOS\include\task.h)(0x573F3A16)
 I (..\..\FreeRTOS\include\list.h)(0x573F3A16)
 F (..\..\Docs\README.txt)(0x5E1527D7)()
 F (..\..\Docs\protocol_example.txt)(0x5E0D9D00)()
-F (..\..\Docs\功能描述.txt)(0x5ECF1C72)()
+F (..\..\Docs\功能描述.txt)(0x5ECF1EEB)()

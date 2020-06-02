@@ -752,7 +752,7 @@
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
           <OutputDirectory>.\App\Obj\</OutputDirectory>
-          <OutputName>App521</OutputName>
+          <OutputName>yi_ti_fa_app</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>1</CreateHexFile>

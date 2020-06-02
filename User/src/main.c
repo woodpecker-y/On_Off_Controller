@@ -293,6 +293,8 @@ int main(void)
     software_init();
     
     //œ‘ æ∞Ê±æ∫≈
+    g_sys_params.Version_H           = HARDWARE_VERSION;
+    g_sys_params.Version_S           = SOFTWARE_VERSION;
     disp_sys_version(g_sys_params.Version_H, g_sys_params.Version_S);
     DELAY_MS(2000);
     
