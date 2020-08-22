@@ -114,15 +114,15 @@ RFConfig rf_config = {
 //}ADCConfig;
 ADCConfig adc_config[2] = {
     {
-        E_ADC1,             //ADC
+        E_ADC1,             //ADC // 供水温度
         {(Port)0, (Pin)0},  //Ctrl
-        {PORTA, PIN0},      //ai
+        {PORTA, PIN1},      //ai
         E_LE_LOW            //pwr_le
     },
     {
-        E_ADC1,             //ADC
+        E_ADC1,             //ADC // 回水温度
         {(Port)0, (Pin)0},  //Ctrl
-        {PORTA, PIN1},      //ai
+        {PORTA, PIN0},      //ai
         E_LE_LOW            //pwr_le
     }
 };

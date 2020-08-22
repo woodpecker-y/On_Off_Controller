@@ -204,6 +204,7 @@ void lcd_disp_menu(void)
                 disp_menu++;
             }
             break;
+#if IN_OUT_TEMP_SWITCH
         case 5://显示进水温度
             if(disp_num == 1)
             {
@@ -226,6 +227,7 @@ void lcd_disp_menu(void)
                 disp_menu++;
             }
             break;
+
         case 7://显示进水温度和回水温度之差
             if(disp_num == 1)
             {
@@ -238,6 +240,14 @@ void lcd_disp_menu(void)
                 disp_menu++;
             }
             break;
+#else
+        case 5://跳过显示进水温度
+            disp_num = 0;
+            disp_menu++;
+            disp_menu++;
+            disp_menu++;
+        break;
+#endif
         case 8://显示阀门开启累计时间
             if(disp_num == 1)
             {
@@ -282,8 +292,9 @@ void collect_temp(void)
     if(collect_temp_num >= 5)
     {
         collect_temp_num = 0;
-        g_run_params.Output_Temp = read_temp(E_ADC_TEMP_INLET) + g_sys_params.Offect_Output;
-        g_run_params.Input_Temp  = read_temp(E_ADC_TEMP_RETURN) + g_sys_params.Offect_Input;
+        
+        g_run_params.Input_Temp  = read_temp(E_ADC_TEMP_INLET)  + g_sys_params.Offect_Input;
+        g_run_params.Output_Temp = read_temp(E_ADC_TEMP_RETURN) + g_sys_params.Offect_Output;
         
         //出水温度错误检测
         if(g_run_params.Output_Temp>1000 || g_run_params.Output_Temp < -100)
@@ -343,7 +354,8 @@ s16 read_temp(E_ADC_NUM_Idx adc_num_idx)
     
     adc_init(adc_num_idx);
     adc_temp = adc_sample(adc_num_idx);
-
+    adc_close(adc_num_idx);
+    
     r = (u32)((10*adc_temp+79852.5) / (120802.5-10*adc_temp) * 1000.00 * 1000.00);
     if(r <= 1000000)        //小于0℃，默认为0℃
         r = 1000000;

@@ -6,19 +6,49 @@
 #include "valve_deal.h"
 #include "error.h"
 
-//软硬件版本号
-#define HARDWARE_VERSION          12    //硬件版本号 11 表示V1.1
-#define SOFTWARE_VERSION          61    //软件版本号 60 为延续老版本通断阀协议
+
 extern const char *foryon;
 //extern const char *foryon_log;
 
 //阀门系统功能裁剪
+#define DEBUG_SWITCH              0     //调试日志开关
 #define ONE_WEEK_SWITCH           1     //一周自转功能
 #define OUTAGE_POWER_SWITCH       1     //断电开阀功能
 #define RF_LOSS_OPEN_VALVE_SWITCH 1     //用户控制模式无线失联则打开阀门  一个小时没有和温控器建立连接则表示失联，则阀门在用户控制模式下自动打开，阀门显示失联
-#define DEBUG_SWITCH              0     //调试日志开关
-#define IN_OUT_TEMP_SWITCH        1     //进回水温度开关
 #define LCD_SWITCH                1     //液晶屏开关
+
+#define IN_OUT_TEMP_SWITCH        0     //进回水温度开关
+#define WHOLE_SWITCH              1     //一体阀开关 (只用来区分不同的硬件版本号)
+    
+//软硬件版本号
+/*通断控制器版本记录：
+    带温度探头的   H：13   S：62
+    不带温度探头的 H：13   S：61
+    
+    一体阀的通断控制器版本记录：
+    带温度探头的   H：11   S：62
+    不带温度探头的 H：11   S：61
+*/
+
+/*------------ 硬件版本号  ------------*/
+#if WHOLE_SWITCH
+    //一体阀通断控制器硬件版本
+    #define HARDWARE_VERSION      11    //硬件版本号 11 表示V1.1
+#else
+    //通断控制器硬件版本
+    #define HARDWARE_VERSION      13    //硬件版本号 11 表示V1.1
+#endif
+
+/*------------ 软件版本号  ------------*/
+#if IN_OUT_TEMP_SWITCH
+    //带温度探头的软件版本
+    #define SOFTWARE_VERSION      62    //软件版本号 60 为延续老版本通断阀协议
+#else
+    //不带温度探头的软件版本
+    #define SOFTWARE_VERSION      61    //软件版本号 60 为延续老版本通断阀协议
+#endif
+
+    
     
 //时间宏定义
 #define UNIT_SECOND	              1UL
